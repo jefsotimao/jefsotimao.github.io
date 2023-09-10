@@ -1,4 +1,4 @@
-.introducao{
+.introducao {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
@@ -8,22 +8,22 @@
   align-items: center;
 }
 
-.introducao-foto{
-width: 100%;
+.introducao-foto {
+  width: 100%;
 }
 
-.introducao-localizacao{
+.introducao-localizacao {
   display: flex;
   align-items: baseline;
 }
 
-.introducao-localizacao img{
+.introducao-localizacao img {
   width: 17px;
   padding-left: 3px;
-  
+
 }
 
-.introducao h1{
+.introducao h1 {
   font-size: 4.2rem;
   line-height: 1.07;
   margin-bottom: 20px;
@@ -33,95 +33,101 @@ width: 100%;
 .introducao h1::before {
   content: "";
   display: block;
-  width:45px; /* Defina a largura e a altura como 100% para cobrir todo o espaço do h1 */
+  width: 45px;
+  /* Defina a largura e a altura como 100% para cobrir todo o espaço do h1 */
   height: 70px;
-  background: url(../img/arrow.svg) no-repeat center/cover; /* Use center/cover para centralizar e ajustar a imagem de fundo */
+  background: url(../img/arrow.svg) no-repeat center/cover;
+  /* Use center/cover para centralizar e ajustar a imagem de fundo */
   position: absolute;
   top: -80px;
   left: -70px;
-   /* Certifique-se de que o ::before fique atrás do texto */
+  /* Certifique-se de que o ::before fique atrás do texto */
 }
 
 .introducao h1::after {
   content: "";
   display: block;
-  width: 18px; /* Largura da segunda imagem */
-  height: 131px; /* Altura da segunda imagem */
-  background: url(../img/dots.svg) no-repeat center/cover; /* Substitua SUA_OUTRA_IMAGEM_URL pelo caminho da sua segunda imagem */
+  width: 18px;
+  /* Largura da segunda imagem */
+  height: 131px;
+  /* Altura da segunda imagem */
+  background: url(../img/dots.svg) no-repeat center/cover;
   position: absolute;
-  bottom: 20px; /* Posição na parte inferior */
-  right: 150px; /* Posição à direita */
-  
+  bottom: 20px;
+  /* Posição na parte inferior */
+  right: 150px;
+  /* Posição à direita */
+
 
 }
 
-.introducao p{
+.introducao p {
   font-size: 1.3rem;
   color: #bcbbbb;
 }
 
 
-@media(max-width:1100px){
-  .introducao h1::after{
+@media(max-width:1100px) {
+  .introducao h1::after {
     display: none;
-    }
+  }
 }
 
 
-@media(max-width:1000px){
-  .introducao h1{
+@media(max-width:1000px) {
+  .introducao h1 {
     font-size: 3rem;
   }
 
 }
 
 
-@media(max-width:830px){
-  .introducao{
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.introducao h1{
-  font-size: 2rem;
-}
-
-.introducao-foto{
-  width: 300px;
+@media(max-width:830px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  .introducao h1::before{
-    width:25px; /* Defina a largura e a altura como 100% para cobrir todo o espaço do h1 */
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao-foto {
+    width: 300px;
+  }
+
+  .introducao h1::before {
+    width: 25px;
     height: 38px;
     top: -50px;
-  left: 0px;
+    left: 0px;
   }
 }
 
 
-@media(max-width:500px){
-  .introducao{
+@media(max-width:500px) {
+  .introducao {
     grid-template-columns: 1fr;
-    }
+  }
 
-  .introducao-foto{
+  .introducao-foto {
     display: none;
-    }
+  }
 
-   .introducao h1{
-  text-align: center;
-  font-size: 2.2rem;
-}
+  .introducao h1 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
 
-.introducao p{
-  justify-content: center;
-}
+  .introducao p {
+    justify-content: center;
+  }
 
-.introducao h1::before{
-  width:25px; /* Defina a largura e a altura como 100% para cobrir todo o espaço do h1 */
-  height: 38px;
-  top: -40px;
-left: 40px;
-}
+  .introducao h1::before {
+    width: 25px;
+    height: 38px;
+    top: -40px;
+    left: 40px;
+  }
 
 }
